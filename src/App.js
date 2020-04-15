@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Name from "./component/name.js";
+import Surname from "./component/surname.js";
+import Age from "./component/age.js";
+import Player from "./component/player.js";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Name name={"Charles"}></Name>
+      <Surname surname={"Bukowski"}></Surname>
+      <Age age={30}></Age>
+      <Player name={"Charles"} surname={"Bukowski"} age={30}></Player>
+    </>
   );
 }
-
 export default App;
