@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Name from "./component/name.js";
 import Surname from "./component/surname.js";
 import Age from "./component/age.js";

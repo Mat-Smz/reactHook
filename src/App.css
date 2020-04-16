@@ -1,4 +1,9 @@
 body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: black;
-  color: aqua;
+  color: grey;
+  font-size: 10px;
 }
