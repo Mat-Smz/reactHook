@@ -4,7 +4,7 @@ const player = (props) => {
   return (
     <div>
       <h1>Prénom : {props.name} </h1>
-      <h1> Nom : {props.surname} </h1> <h1>Age : {props.age} ans</h1>
+      <h1> Nom : {props.surname} </h1> <h1>Age : {props.years} ans</h1>
     </div>
   );
 };

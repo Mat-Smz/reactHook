@@ -7,3 +7,9 @@ body {
   color: grey;
   font-size: 10px;
 }
+
+.profil {
+  border-color: grey;
+  border-style: solid;
+  width: 300px;
+}
