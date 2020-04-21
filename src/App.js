@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Profil name={"Charles"} surname={"Bukowski"} years={26}></Profil>
+      <Profil name={"Charles"} surname={"Bukowski"} years={99}></Profil>
     </div>
   );
 }
