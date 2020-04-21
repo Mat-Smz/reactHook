@@ -8,7 +8,10 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Profil name={"Charles"} surname={"Bukowski"} years={99}></Profil>
+      <Profil name={"Charles"} surname={"Bukowski"} years={30}></Profil>
+      <Profil name={"Marcel"} surname={"Proust"} years={25}></Profil>
+      <Profil name={"Victor"} surname={"Hugo"} years={25}></Profil>
+      <Profil name={"Arthur"} surname={"Rimbaud"} years={25}></Profil>
     </div>
   );
 }

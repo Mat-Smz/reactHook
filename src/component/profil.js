@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Player from "../component/player.js";
 
 const Profil = (props) => {
-  const [age, setAge] = useState(25);
+  const [age, setAge] = useState(props.years);
 
   const addOneYear = () => {
     setAge(age - 1);
