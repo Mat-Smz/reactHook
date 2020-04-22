@@ -1,4 +1,6 @@
-body {
+.row {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   background-color: black;
   color: white;
@@ -9,7 +11,7 @@ body {
   border-radius: 12px;
   background: #0b7f60;
   box-shadow: -5px 5px 0px #0b7e5f, 5px -5px 0px #0b8061;
-  width: 25%;
+  width: 300px;
   margin: 20px;
   padding: 5px;
   padding-bottom: 15px;

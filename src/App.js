@@ -5,14 +5,67 @@ import React from "react";
 import Profil from "./component/profil.js";
 import "./App.css";
 
+const deadAuthors = [
+  {
+    show: true,
+    name: "Charles",
+    surname: "Bukowski",
+    years: 30,
+  },
+  {
+    show: false,
+    name: "Marcel",
+    surname: "Poust",
+    years: 25,
+  },
+  {
+    show: true,
+    name: "Victor",
+    surname: "Hugo",
+    years: 25,
+  },
+  {
+    show: true,
+    name: "Arthur",
+    surname: "Rimbaud",
+    years: 25,
+  },
+];
+
+const livingAuthors = [
+  {
+    show: true,
+    name: "Virginie",
+    surname: "Despentes",
+    years: 30,
+  },
+];
+
+const renderUser = ({ name, surname, years }) => {
+  return (
+    <div key={name}>
+      <Profil name={name} surname={surname} years={years} />
+    </div>
+  );
+};
+
 function App() {
+  const deadUsersRendered = React.useMemo(
+    () => deadAuthors.filter(({ show }) => show === true).map(renderUser),
+    [deadAuthors]
+  );
+
+  const livingUsersRendered = React.useMemo(
+    () => livingAuthors.filter(({ show }) => show === true).map(renderUser),
+    [livingAuthors]
+  );
+
   return (
     <div>
-      <Profil name={"Charles"} surname={"Bukowski"} years={30}></Profil>
-      <Profil name={"Marcel"} surname={"Proust"} years={25}></Profil>
-      <Profil name={"Victor"} surname={"Hugo"} years={25}></Profil>
-      <Profil name={"Arthur"} surname={"Rimbaud"} years={25}></Profil>
+      <div className="row">{deadUsersRendered}</div>
+      <div className="row">{livingUsersRendered}</div>
     </div>
   );
 }
+
 export default App;

@@ -1,6 +1,7 @@
 import React from "react";
 
 const player = (props) => {
+  console.log(props.name);
   return (
     <div>
       <h1>Prénom : {props.name} </h1>

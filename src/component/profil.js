@@ -12,6 +12,7 @@ const Profil = (props) => {
     <div className={"profil"}>
       <Player name={props.name} surname={props.surname} years={age}></Player>
 
+      <button onClick={props.hideMe}>Cacher</button>
       <button onClick={addOneYear}>Plus jeune ?</button>
       <button
         onClick={() => {
