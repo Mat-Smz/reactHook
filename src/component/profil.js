@@ -3,24 +3,33 @@ import Player from "../component/player.js";
 
 const Profil = (props) => {
   const [age, setAge] = useState(props.years);
+  const [hide, setHide] = useState(props.show);
+
+  const subOneYear = () => {
+    setAge(age - 1);
+  };
 
   const addOneYear = () => {
-    setAge(age - 1);
+    setAge(age + 1);
+  };
+
+  const hideMe = () => {
+    setHide(false);
+    console.log(hide);
   };
 
   return (
     <div className={"profil"}>
-      <Player name={props.name} surname={props.surname} years={age}></Player>
+      <Player
+        show={hide}
+        name={props.name}
+        surname={props.surname}
+        years={age}
+      ></Player>
 
-      <button onClick={props.hideMe}>Cacher</button>
-      <button onClick={addOneYear}>Plus jeune ?</button>
-      <button
-        onClick={() => {
-          setAge(age + 1);
-        }}
-      >
-        Plus vieux ?
-      </button>
+      <button onClick={hideMe}>Cacher</button>
+      <button onClick={subOneYear}>Plus jeune ?</button>
+      <button onClick={addOneYear}>Plus vieux ?</button>
     </div>
   );
 };

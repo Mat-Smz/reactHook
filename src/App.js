@@ -41,10 +41,10 @@ const livingAuthors = [
   },
 ];
 
-const renderUser = ({ name, surname, years }) => {
+const renderUser = ({ show, name, surname, years }) => {
   return (
     <div key={name}>
-      <Profil name={name} surname={surname} years={years} />
+      <Profil name={name} surname={surname} years={years} show={show} />
     </div>
   );
 };
