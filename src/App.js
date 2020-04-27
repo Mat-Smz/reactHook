@@ -30,9 +30,6 @@ const deadAuthors = [
     surname: "Rimbaud",
     years: 25,
   },
-];
-
-const livingAuthors = [
   {
     show: true,
     name: "Virginie",
@@ -55,15 +52,9 @@ function App() {
     [deadAuthors]
   );
 
-  const livingUsersRendered = React.useMemo(
-    () => livingAuthors.filter(({ show }) => show === true).map(renderUser),
-    [livingAuthors]
-  );
-
   return (
     <div>
       <div className="row">{deadUsersRendered}</div>
-      <div className="row">{livingUsersRendered}</div>
     </div>
   );
 }
