@@ -6,7 +6,7 @@ const Profil = (props) => {
 
   const hideMe = () => {
     setHide(false);
-    console.log(hide);
+    console.log(props.show);
   };
 
   return (
@@ -18,7 +18,7 @@ const Profil = (props) => {
         years={props.years}
       ></Player>
 
-      <button onClick={hideMe}>View/Hide</button>
+      <button onClick={hideMe}>View</button>
     </div>
   );
 };

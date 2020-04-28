@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Player = (props) => {
   const [age, setAge] = useState(props.years);
-  console.log(props.name);
 
   const subOneYear = () => {
     setAge(age - 1);

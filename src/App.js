@@ -1,7 +1,4 @@
 import React from "react";
-// import Name from "./component/name.js";
-// import Surname from "./component/surname.js";
-// import Age from "./component/years.js";
 import Profil from "./component/profil.js";
 import "./App.css";
 
@@ -39,6 +36,7 @@ const deadAuthors = [
 ];
 
 const renderUser = ({ show, name, surname, years }) => {
+  console.log("haha");
   return (
     <div key={name}>
       <Profil name={name} surname={surname} years={years} show={show} />
