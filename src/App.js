@@ -29,6 +29,12 @@ const deadAuthors = [
   },
   {
     show: true,
+    name: "Jean",
+    surname: "Racine",
+    years: 25,
+  },
+  {
+    show: true,
     name: "Virginie",
     surname: "Despentes",
     years: 30,
