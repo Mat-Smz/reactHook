@@ -19,7 +19,7 @@ const deadAuthors = [
     show: true,
     name: "Victor",
     surname: "Hugo",
-    years: 25,
+    years: 269,
   },
   {
     show: true,
