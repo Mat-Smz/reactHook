@@ -37,7 +37,7 @@ const deadAuthors = [
     show: true,
     name: "Virginie",
     surname: "Despentes",
-    years: 30,
+    years: 32,
   },
 ];
 
